@@ -5,3 +5,79 @@
     */
     box-sizing: border-box;
 }
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.portfolio {
+    margin-left: 40px;
+    margin-top: 22px;
+    color: white;
+}
+.navigatiebalk {
+    background: black;
+    display: flex;
+}
+.navigatiebalk nav {
+    width: 100%;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+
+}
+.navigatiebalk ul {
+    display: flex;
+    width: 100%;
+    gap: 60px;
+    list-style: none;
+    padding: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+.onderscheidingsbalk {
+    width: 100%;
+    background-color: white;
+    height: 5px;
+}
+.introductie {
+    display: flex;
+    gap: 35px;
+    padding: 50px;
+}
+.foto {
+    margin-left: 70px;
+    width: 35%;
+    height: 750px;
+    border-radius: 60px;
+    box-shadow: 0 15px 40px rgba(255,255,255,0.4);
+}
+.introductietext {
+    margin-top: 15px;
+    color: white;
+
+}
+.introductietext h1 {
+    font-size: 110px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.introductietext h2 {
+    font-size: 90px;
+    margin-left: 60px;
+    margin-top: 0;
+}
+.contact {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
