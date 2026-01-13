@@ -23,7 +23,7 @@ body {
 
     width: 1100px;
     height: 1100px;
-    background-image: url("../assets/tattoo-decor.png");
+    background-image: url("assets/tattoo-decor.png");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -107,6 +107,10 @@ body {
 .contact-button {
     background-color: white;
     color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 999px;
     cursor: pointer;
@@ -116,6 +120,7 @@ body {
     margin-right: 60px;
     margin-bottom: 20px;
     margin-top: 20px;
+    white-space: nowrap;
 }
 .horizontale-balk {
     width: 100%;
@@ -197,17 +202,42 @@ body {
     margin-left: 2%;
     margin-right: 2%;
 }
-.contact-gegevens h2 {
+.contact-sectie{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: white;
-    font-size: 80px;
-    margin-top: 100px;
-    margin-left: 14%;
+
+    padding: 80px 0;
+    gap: 20px;                /
 }
-.contact-gegevens h1 {
+.contact-gegevens{
     display: flex;
-    color: white;
-    font-size: 85px;
-    margin-top: -60px;
-    margin-left: 14%;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-gegevens h2,
+.contact-gegevens h1{
+    margin: 10px;
+    font-size: 50px;
+}
+.contact-gegevens h1{
+    margin-top: -20px;
+}
+.media-grid{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.media-grid img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.contact-info {
+    font-size: 20px;
 }
