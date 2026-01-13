@@ -41,19 +41,6 @@ body {
     background-color: white;
     height: 5px;
 }
-.contact {
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    padding: 8px 18px;
-    font-size: 14px;
-    font-weight: 400;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 .contact-button {
     background-color: white;
     color: black;
@@ -72,25 +59,57 @@ body {
     margin-top: 20px;
     white-space: nowrap;
 }
-.projecten-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+.teksteninfo h1 {
+    font-size: 80px;
+    color: white;
+    margin-top: 140px;
+    margin-left: -80px;
+}
+.teksteninfo h2 {
+    font-size: 80px;
+    color: white;
+    margin-top: -30px;
+    margin-left: -80px;
+}
+.teksteninfo p {
+    font-size: 20px;
+    color: white;
+    margin-left: -80px;
+}
+.persoonlijk{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 60px;
+}
+.persoonlijk img{
+    width: 50%;
+    height: 50%;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-right: -80px;
+}
+.gallery-grid{
     padding: 80px 10%;
 }
-.project-kaart{
-    background-color: black;
-    color: white;
-    text-align: center;
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 220px);
+    gap: 20px;
+
+    grid-template-areas:
+      "img1 img2 img3"
+      "img1 img4 img5";
 }
-.project-kaart h2{
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-.project-kaart img{
+.img1{ grid-area: img1; }
+.img2{ grid-area: img2; }
+.img3{ grid-area: img3; }
+.img4{ grid-area: img4; }
+.img5{ grid-area: img5; }
+.fotos img{
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     border-radius: 16px;
-    margin-top: 50px;
 }

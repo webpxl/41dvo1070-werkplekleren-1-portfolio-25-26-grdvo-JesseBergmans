@@ -41,19 +41,6 @@ body {
     background-color: white;
     height: 5px;
 }
-.contact {
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    padding: 8px 18px;
-    font-size: 14px;
-    font-weight: 400;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 .contact-button {
     background-color: white;
     color: black;
@@ -72,25 +59,29 @@ body {
     margin-top: 20px;
     white-space: nowrap;
 }
-.projecten-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    padding: 80px 10%;
-}
-.project-kaart{
-    background-color: black;
+.teksteninfo h1 {
+    font-size: 80px;
     color: white;
-    text-align: center;
+    margin-top: 140px;
 }
-.project-kaart h2{
-    margin-bottom: 20px;
-    font-size: 28px;
+.teksteninfo h2 {
+    font-size: 80px;
+    color: white;
+    margin-top: -30px;
 }
-.project-kaart img{
-    width: 100%;
-    height: 300px;
+.teksteninfo p {
+    font-size: 20px;
+    color: white;
+}
+.project{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 120px 10%;
+}
+.project img{
+    height: 700px;
+    width: 500px;
+    max-width: 100%;
     object-fit: cover;
-    border-radius: 16px;
-    margin-top: 50px;
 }
