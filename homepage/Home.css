@@ -1,0 +1,213 @@
+* {
+    /*
+    padding: 0;
+    margin: 0;
+    */
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.pagina {
+    position: relative;
+    overflow-x: hidden;
+}
+.decor {
+    position: absolute;
+
+    top: 20%;
+    right: -165px;
+    left: auto;
+
+    width: 1100px;
+    height: 1100px;
+    background-image: url("../assets/tattoo-decor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    transform: translateY(-50%) scaleX(-1);
+    transform-origin: center;
+
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.95;
+}
+.pagina > *:not(.decor) {
+    position: relative;
+    z-index: 2;
+}
+.portfolio {
+    margin-left: 40px;
+    margin-top: 22px;
+    color: white;
+}
+.navigatiebalk {
+    background: black;
+    display: flex;
+}
+.navigatiebalk nav {
+    width: 100%;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+
+}
+.navigatiebalk ul {
+    display: flex;
+    width: 100%;
+    gap: 60px;
+    list-style: none;
+    padding: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+.onderscheidingsbalk {
+    width: 100%;
+    background-color: white;
+    height: 5px;
+}
+.introductie {
+    display: flex;
+    gap: 35px;
+    padding: 50px;
+}
+.foto {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 35%;
+    height: 750px;
+    border-radius: 60px;
+    box-shadow: 0 15px 40px rgba(255,255,255,0.4);
+}
+.introductietext {
+    margin-top: 15px;
+    color: white;
+    border-left: 3px solid white;
+    padding-left: 40px;
+    padding-right: 85px;
+}
+.introductietext h1 {
+    font-size: 110px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.introductietext h2 {
+    font-size: 90px;
+    margin-left: 60px;
+    margin-top: 0;
+}
+.introductietext h3 {
+    margin-left: 60px;
+    margin-top: 100px;
+}
+.contact-button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.horizontale-balk {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.projectknop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    display: inline-block;
+    background-color: lightgray;
+    color: black;
+    border: none;
+    border-radius: 400px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 24px;
+}
+.lijn-met-knop {
+    position: relative;
+    margin-top: 110px;
+    margin-left: 60px;
+    width: 91%;
+}
+.vak-links h1 {
+    font-size: 110px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    color: white;
+}
+.vak-links p {
+    color: white;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-left: 115px;
+    font-size: 20px;
+}
+.skills {
+    display: flex;
+    gap: 35px;
+    padding: 50px;
+}
+.vak-links,
+.vak-rechts {
+    flex: 1;
+    min-width: 0;
+}
+.vak-rechts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    margin-right: 60px;
+}
+.vak-rechts h1 {
+    padding-top: 20px;
+}
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    width: 100%;
+}
+.software-grid img {
+    width: 100%;
+    max-width: 120px;
+    justify-self: center;
+    align-self: center;
+}
+.horizontale-balk-2 {
+    width: 96%;
+    height: 6px;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.contact-gegevens h2 {
+    display: flex;
+    color: white;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-left: 14%;
+}
+.contact-gegevens h1 {
+    display: flex;
+    color: white;
+    font-size: 85px;
+    margin-top: -60px;
+    margin-left: 14%;
+}

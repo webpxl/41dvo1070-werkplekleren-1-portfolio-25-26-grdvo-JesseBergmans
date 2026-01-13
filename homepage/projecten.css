@@ -41,33 +41,6 @@ body {
     background-color: white;
     height: 5px;
 }
-.introductie {
-    display: flex;
-    gap: 35px;
-    padding: 50px;
-}
-.foto {
-    margin-left: 70px;
-    width: 35%;
-    height: 750px;
-    border-radius: 60px;
-    box-shadow: 0 15px 40px rgba(255,255,255,0.4);
-}
-.introductietext {
-    margin-top: 15px;
-    color: white;
-
-}
-.introductietext h1 {
-    font-size: 110px;
-    margin-left: 60px;
-    margin-bottom: 30px;
-}
-.introductietext h2 {
-    font-size: 90px;
-    margin-left: 60px;
-    margin-top: 0;
-}
 .contact {
     background-color: white;
     color: black;
