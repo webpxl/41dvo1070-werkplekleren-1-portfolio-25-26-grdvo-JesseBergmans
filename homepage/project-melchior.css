@@ -114,6 +114,15 @@ body {
 }
 .nttv {
     color: white;
-    margin-left: 45%;
+    margin-left: 44%;
     margin-top: 60px;
+}
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+.footer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
 }

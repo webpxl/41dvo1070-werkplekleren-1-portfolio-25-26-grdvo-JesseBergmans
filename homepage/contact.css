@@ -96,3 +96,12 @@ body {
     margin-top: 20px;
     white-space: nowrap;
 }
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+.footer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}

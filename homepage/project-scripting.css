@@ -145,5 +145,14 @@ video {
     margin: 60px auto;
     border-radius: 16px;
 }
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+.footer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
 
 

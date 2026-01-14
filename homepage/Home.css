@@ -241,3 +241,12 @@ body {
 .contact-info {
     font-size: 20px;
 }
+.footer {
+    text-align: center;
+    margin: 40px 0;
+}
+.footer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+}
