@@ -11,6 +11,30 @@ body {
     margin: 0;
     padding: 0;
 }
+.pagina {
+    position: relative;
+    overflow-x: hidden;
+}
+.decor {
+    position: absolute;
+    top: 40%;
+    right: -165px;
+    left: auto;
+    width: 1100px;
+    height: 1100px;
+    background-image: url("assets/tattoo-decor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50%) scaleX(-1);
+    transform-origin: center;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.95;
+}
+.pagina > *:not(.decor) {
+    position: relative;
+    z-index: 2;
+}
 .portfolio {
     margin-left: 40px;
     margin-top: 22px;
@@ -59,4 +83,37 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     white-space: nowrap;
+}
+.teksteninfo h1 {
+    font-size: 80px;
+    color: white;
+    margin-top: 140px;
+}
+.teksteninfo p {
+    font-size: 20px;
+    color: white;
+}
+.project{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 120px 10%;
+}
+.project img{
+    height: 700px;
+    width: 500px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.horizontale-balk-2 {
+    width: 96%;
+    height: 6px;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.nttv {
+    color: white;
+    margin-left: 45%;
+    margin-top: 60px;
 }
