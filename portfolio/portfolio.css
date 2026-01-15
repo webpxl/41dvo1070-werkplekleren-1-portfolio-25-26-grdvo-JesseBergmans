@@ -3,46 +3,17 @@
     margin: 0;
     padding: 0;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
-    line-height: 1.6;
+.tekst {
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
 }
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-header {
-    margin-bottom: 30px;
-}
-h1 {
-    font-size: 2rem;
-    margin-bottom: 5px;
-}
-.student {
-    color: #555;
-}
-.orl {
-    margin-bottom: 30px;
-}
-.orl h2 {
-    color: #2f7d32;
-    margin-bottom: 8px;
-}
-.omschrijving {
-    margin-bottom: 12px;
-}
-.antwoord {
-    border: 2px dashed #bbb;
-    padding: 15px;
-    border-radius: 6px;
-    background-color: #fafafa;
-}
-.placeholder {
-    color: #777;
-    font-style: italic;
+.link {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
