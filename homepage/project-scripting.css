@@ -10,9 +10,33 @@ body {
     margin: 0;
     padding: 0;
 }
+.pagina {
+    position: relative;
+    overflow-x: hidden;
+}
+.decor {
+    position: absolute;
+    top: 20%;
+    left: auto;
+    width: clamp(300px, 60vw, 1100px);
+    height: clamp(300px, 60vw, 1100px);
+    right: clamp(-200px, -20vw, -100px);
+    background-image: url("assets/tattoo-decor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50%) scaleX(-1);
+    transform-origin: center;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.95;
+}
+.pagina > *:not(.decor) {
+    position: relative;
+    z-index: 2;
+}
 .portfolio {
-    margin-left: 40px;
-    margin-top: 22px;
+    margin-left: clamp(16px, 3vw, 40px);
+    margin-top: clamp(10px, 2vw, 22px);
     color: white;
 }
 .navigatiebalk {
@@ -30,9 +54,10 @@ body {
 .navigatiebalk ul {
     display: flex;
     width: 100%;
-    gap: 60px;
+    gap: clamp(18px, 4vw, 60px);
+    padding: clamp(10px, 2vw, 20px);
+    font-size: clamp(12px, 1.6vw, 16px);
     list-style: none;
-    padding: 20px;
     justify-content: center;
     font-weight: bold;
 }
@@ -51,39 +76,40 @@ body {
     border: none;
     border-radius: 999px;
     cursor: pointer;
-    padding: 8px 18px;
-    font-size: 14px;
+    margin-right: clamp(16px, 4vw, 60px);
+    margin-top: clamp(10px, 2vw, 20px);
+    margin-bottom: clamp(10px, 2vw, 20px);
+    padding: clamp(6px, 1.2vw, 8px) clamp(12px, 2vw, 18px);
+    font-size: clamp(12px, 1.6vw, 14px);
     font-weight: 400;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    margin-top: 20px;
     white-space: nowrap;
 }
 .project{
     display: flex;
     align-items: center;
-    gap: 80px;
-    padding: 120px 10%;
+    gap: clamp(16px, 4vw, 80px);
+    padding: clamp(30px, 8vw, 120px) 10%;
 }
 .project img{
-    height: 700px;
-    width: 500px;
-    max-width: 100%;
+    width: clamp(220px, 32vw, 500px);
+    height: auto;
+    aspect-ratio: 5 / 7;
     object-fit: cover;
+    border-radius: clamp(12px, 2vw, 24px);
 }
 .gallery-grid {
-    padding: 80px 10%;
+    padding: clamp(30px, 6vw, 80px) 10%;
 }
 .fotos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: clamp(12px, 3vw, 30px);
 }
 .fotos img {
     width: 100%;
-    height: 220px;
+    height: clamp(120px, 18vw, 220px);
+    border-radius: clamp(10px, 2vw, 16px);
     object-fit: cover;
-    border-radius: 16px;
 }
 #lightbox {
     position: fixed;
@@ -115,43 +141,43 @@ body {
 .persoonlijk {
     display: flex;
     justify-content: center;
-    padding: 80px 10%;
+    padding: clamp(30px, 6vw, 80px) 10%;
 }
 .teksteninfo {
     text-align: center;
-    max-width: 900px;
+    max-width: clamp(320px, 70vw, 900px);
 }
 .teksteninfo h1 {
     color: white;
-    font-size: 45px;
+    font-size: clamp(22px, 4vw, 45px);
 }
 .teksteninfo p {
-    margin-top: 30px;
+    font-size: clamp(14px, 2vw, 20px);
+    margin-top: clamp(16px, 3vw, 30px);
     line-height: 1.6;
     color: white;
-    font-size: 20px;
 }
 .horizontale-balk-2 {
     width: 96%;
-    height: 6px;
+    height: clamp(3px, 0.8vw, 6px);
     background-color: white;
     margin-left: 2%;
     margin-right: 2%;
 }
 video {
     width: 100%;
-    max-width: 900px;
+    max-width: clamp(320px, 85vw, 900px);
+    margin: clamp(24px, 6vw, 60px) auto;
+    border-radius: clamp(10px, 2vw, 16px);
     display: block;
-    margin: 60px auto;
-    border-radius: 16px;
 }
 .footer {
     text-align: center;
-    margin: 40px 0;
+    margin: clamp(20px, 4vw, 40px) 0;
 }
 .footer a {
     color: white;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     text-decoration: underline;
 }
 

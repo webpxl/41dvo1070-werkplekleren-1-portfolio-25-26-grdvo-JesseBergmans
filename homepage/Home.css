@@ -16,20 +16,16 @@ body {
 }
 .decor {
     position: absolute;
-
     top: 20%;
-    right: -165px;
     left: auto;
-
-    width: 1100px;
-    height: 1100px;
+    width: clamp(300px, 60vw, 1100px);
+    height: clamp(300px, 60vw, 1100px);
+    right: clamp(-200px, -20vw, -100px);
     background-image: url("assets/tattoo-decor.png");
     background-repeat: no-repeat;
     background-size: contain;
-
     transform: translateY(-50%) scaleX(-1);
     transform-origin: center;
-
     z-index: 1;
     pointer-events: none;
     opacity: 0.95;
@@ -39,8 +35,8 @@ body {
     z-index: 2;
 }
 .portfolio {
-    margin-left: 40px;
-    margin-top: 22px;
+    margin-left: clamp(16px, 3vw, 40px);
+    margin-top: clamp(10px, 2vw, 22px);
     color: white;
 }
 .navigatiebalk {
@@ -58,9 +54,10 @@ body {
 .navigatiebalk ul {
     display: flex;
     width: 100%;
-    gap: 60px;
+    gap: clamp(18px, 4vw, 60px);
+    padding: clamp(10px, 2vw, 20px);
+    font-size: clamp(12px, 1.6vw, 16px);
     list-style: none;
-    padding: 20px;
     justify-content: center;
     font-weight: bold;
 }
@@ -68,41 +65,6 @@ body {
     width: 100%;
     background-color: white;
     height: 5px;
-}
-.introductie {
-    display: flex;
-    gap: 35px;
-    padding: 50px;
-}
-.foto {
-    margin-top: 20px;
-    margin-left: 70px;
-    margin-right: 70px;
-    width: 35%;
-    height: 750px;
-    border-radius: 60px;
-    box-shadow: 0 15px 40px rgba(255,255,255,0.4);
-}
-.introductietext {
-    margin-top: 15px;
-    color: white;
-    border-left: 3px solid white;
-    padding-left: 40px;
-    padding-right: 85px;
-}
-.introductietext h1 {
-    font-size: 110px;
-    margin-left: 60px;
-    margin-bottom: 30px;
-}
-.introductietext h2 {
-    font-size: 90px;
-    margin-left: 60px;
-    margin-top: 0;
-}
-.introductietext h3 {
-    margin-left: 60px;
-    margin-top: 100px;
 }
 .contact-button {
     background-color: white;
@@ -114,17 +76,52 @@ body {
     border: none;
     border-radius: 999px;
     cursor: pointer;
-    padding: 8px 18px;
-    font-size: 14px;
+    margin-right: clamp(16px, 4vw, 60px);
+    margin-top: clamp(10px, 2vw, 20px);
+    margin-bottom: clamp(10px, 2vw, 20px);
+    padding: clamp(6px, 1.2vw, 8px) clamp(12px, 2vw, 18px);
+    font-size: clamp(12px, 1.6vw, 14px);
     font-weight: 400;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    margin-top: 20px;
     white-space: nowrap;
+}
+.introductie {
+    display: flex;
+    gap: clamp(20px, 4vw, 60px);
+    padding: clamp(20px, 4vw, 50px);
+}
+.foto {
+    width: clamp(200px, 28vw, 420px);
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: clamp(20px, 4vw, 60px);
+}
+.introductietext {
+    margin-top: 15px;
+    color: white;
+    border-left: 3px solid white;
+    padding-left: clamp(16px, 3vw, 40px);
+    padding-right: clamp(16px, 4vw, 85px);
+}
+.introductietext h1 {
+    font-size: clamp(36px, 6vw, 110px);
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.introductietext h2 {
+    font-size: clamp(28px, 5vw, 90px);
+    margin-left: 60px;
+    margin-top: 0;
+}
+.introductietext h3 {
+    font-size: clamp(14px, 1.8vw, 20px);
+    line-height: 1.6;
+    margin-left: 60px;
+    margin-top: 100px;
 }
 .horizontale-balk {
     width: 100%;
-    height: 3px;
+    height: clamp(2px, 0.4vw, 3px);
     background-color: white;
 }
 .projectknop {
@@ -139,37 +136,38 @@ body {
     border: none;
     border-radius: 400px;
     cursor: pointer;
-    font-size: 20px;
-    padding: 10px 24px;
+    font-size: clamp(14px, 1.8vw, 18px);
+    padding: clamp(6px, 1.5vw, 12px) clamp(12px, 2vw, 20px);
 }
 .lijn-met-knop {
     position: relative;
     margin-top: 110px;
     margin-left: 60px;
-    width: 91%;
+    width: clamp(200px, 30vw, 700px);
 }
 .vak-links h1 {
-    font-size: 110px;
-    margin-left: 150px;
-    margin-bottom: 30px;
+    font-size: clamp(30px, 6vw, 110px);
+    margin-left: clamp(16px, 8vw, 150px);
+    margin-bottom: clamp(10px, 3vw, 30px);
     color: white;
 }
 .vak-links p {
     color: white;
-    max-width: 600px;
     line-height: 1.6;
-    margin-left: 115px;
-    font-size: 20px;
+    font-size: clamp(14px, 1.8vw, 20px);
+    margin-left: clamp(16px, 7vw, 115px);
+    max-width: clamp(280px, 60vw, 600px);
 }
 .skills {
     display: flex;
-    gap: 35px;
-    padding: 50px;
+    gap: clamp(16px, 4vw, 35px);
+    padding: clamp(16px, 4vw, 50px);
 }
 .vak-links,
 .vak-rechts {
     flex: 1;
     min-width: 0;
+    margin-right: clamp(16px, 4vw, 60px);
 }
 .vak-rechts {
     display: flex;
@@ -180,24 +178,25 @@ body {
     margin-right: 60px;
 }
 .vak-rechts h1 {
-    padding-top: 20px;
+    font-size: clamp(18px, 2.6vw, 32px);
+    padding-top: clamp(10px, 2vw, 20px);
 }
 .software-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 40px;
+    gap: clamp(12px, 3vw, 30px);
+    padding: clamp(14px, 4vw, 40px);
     width: 100%;
 }
 .software-grid img {
     width: 100%;
-    max-width: 120px;
+    max-width: clamp(32px, 8vw, 120px);
     justify-self: center;
     align-self: center;
 }
 .horizontale-balk-2 {
     width: 96%;
-    height: 6px;
+    height: clamp(3px, 0.8vw, 6px);
     background-color: white;
     margin-left: 2%;
     margin-right: 2%;
@@ -209,9 +208,8 @@ body {
     align-items: center;
     text-align: center;
     color: white;
-
-    padding: 80px 0;
-    gap: 20px;                /
+    padding: clamp(30px, 7vw, 80px) 0;
+    gap: clamp(12px, 2vw, 20px);
 }
 .contact-gegevens{
     display: flex;
@@ -220,33 +218,34 @@ body {
 }
 .contact-gegevens h2,
 .contact-gegevens h1{
-    margin: 10px;
-    font-size: 50px;
+    font-size: clamp(22px, 4vw, 50px);
+    margin: clamp(6px, 1.6vw, 10px);
 }
 .contact-gegevens h1{
-    margin-top: -20px;
+    margin-top: clamp(-12px, -2vw, -20px);
 }
 .media-grid{
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 22px;
+    gap: clamp(12px, 3vw, 22px);
     flex-wrap: wrap;
 }
 .media-grid img{
-    width: 60px;
-    height: 60px;
+    width: clamp(28px, 6vw, 60px);
+    height: clamp(28px, 6vw, 60px);
     object-fit: contain;
 }
 .contact-info {
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
+    padding: 0 clamp(12px, 3vw, 40px);
 }
 .footer {
     text-align: center;
-    margin: 40px 0;
+    margin: clamp(20px, 4vw, 40px) 0;
 }
 .footer a {
     color: white;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     text-decoration: underline;
 }

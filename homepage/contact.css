@@ -11,8 +11,8 @@ body {
     padding: 0;
 }
 .portfolio {
-    margin-left: 40px;
-    margin-top: 22px;
+    margin-left: clamp(16px, 3vw, 40px);
+    margin-top: clamp(10px, 2vw, 22px);
     color: white;
 }
 .navigatiebalk {
@@ -30,9 +30,10 @@ body {
 .navigatiebalk ul {
     display: flex;
     width: 100%;
-    gap: 60px;
+    gap: clamp(18px, 4vw, 60px);
+    padding: clamp(10px, 2vw, 20px);
+    font-size: clamp(12px, 1.6vw, 16px);
     list-style: none;
-    padding: 20px;
     justify-content: center;
     font-weight: bold;
 }
@@ -40,43 +41,6 @@ body {
     width: 100%;
     background-color: white;
     height: 5px;
-}
-.contact-sectie{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-
-    padding: 80px 0;
-    gap: 20px;                /
-}
-.contact-gegevens{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contact-gegevens h1{
-    margin: 10px;
-    font-size: 90px;
-}
-.media-grid{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 22px;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-.media-grid img{
-    width: 110px;
-    height: 110px;
-    object-fit: contain;
-}
-.contact-info {
-    font-size: 45px;
 }
 .contact-button {
     background-color: white;
@@ -88,20 +52,58 @@ body {
     border: none;
     border-radius: 999px;
     cursor: pointer;
-    padding: 8px 18px;
-    font-size: 14px;
+    margin-right: clamp(16px, 4vw, 60px);
+    margin-top: clamp(10px, 2vw, 20px);
+    margin-bottom: clamp(10px, 2vw, 20px);
+    padding: clamp(6px, 1.2vw, 8px) clamp(12px, 2vw, 18px);
+    font-size: clamp(12px, 1.6vw, 14px);
     font-weight: 400;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    margin-top: 20px;
     white-space: nowrap;
+}
+.contact-sectie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: clamp(30px, 7vw, 80px) 0;
+    gap: clamp(12px, 2vw, 20px);
+}
+.contact-gegevens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-gegevens h1{
+    font-size: clamp(32px, 6vw, 90px);
+    margin: clamp(6px, 1.6vw, 10px);
+}
+.media-grid{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: clamp(20px, 6vw, 60px);
+    margin-bottom: clamp(20px, 6vw, 60px);
+    gap: clamp(12px, 3vw, 22px);
+}
+.media-grid img{
+    width: clamp(44px, 8vw, 110px);
+    height: clamp(44px, 8vw, 110px);
+    object-fit: contain;
+}
+.contact-info {
+    font-size: clamp(16px, 3.5vw, 45px);
+    line-height: 1.5;
+    padding: 0 clamp(12px, 3vw, 40px);
 }
 .footer {
     text-align: center;
-    margin: 40px 0;
+    margin: clamp(20px, 4vw, 40px) 0;
 }
 .footer a {
     color: white;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
     text-decoration: underline;
 }
