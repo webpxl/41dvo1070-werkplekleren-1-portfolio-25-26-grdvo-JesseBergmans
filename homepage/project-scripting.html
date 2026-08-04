@@ -1,69 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Project scripting | Portfolio Jesse Bergmans</title>
+
     <link rel="stylesheet" href="project-scripting.css">
     <script src="project-scripting.js" defer></script>
 </head>
+
 <body>
+
 <header class="navigatiebalk">
+    <nav class="navigatie">
 
-    <h1 class="portfolio">Portfolio</h1>
-    <nav>
+        <a href="index.html" class="portfolio-logo">
+            Portfolio
+        </a>
+
         <ul class="nav-lijst">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="over-mij.html" class="nav-link">Over mij</a></li>
-            <li class="nav-item"><a href="projecten.html" class="nav-link">Projecten</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
+            <li>
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
 
-    <a href="contact.html" class="contact-button">contacteer mij</a>
+            <li>
+                <a href="over-mij.html" class="nav-link">
+                    Over mij
+                </a>
+            </li>
+
+            <li>
+                <a href="projecten.html" class="nav-link">
+                    Projecten
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+        </ul>
+
+        <a href="contact.html" class="contact-button">
+            Contacteer mij
+        </a>
+
+    </nav>
 </header>
+
 <div class="onderscheidingsbalk"></div>
 
-<section class="gallery-grid">
-    <div class="fotos">
-        <img src="assets/Foto 11.png" alt=""/>
-        <img src="assets/foto 12.png" alt=""/>
-        <img src="assets/foto 13.png" alt=""/>
-        <img src="assets/foto 14.png" alt=""/>
-    </div>
+<main class="project-pagina">
 
-</section>
 
-<div class="horizontale-balk-2"></div>
+    <section class="project-intro">
 
-<div id="lightbox">
-    <span id="lightbox-close">&times;</span>
-    <img id="lightbox-img" src="" alt="">
+        <p class="project-label">
+            Portfolio project
+        </p>
+
+        <h1>Project: scripting</h1>
+
+        <p class="intro-tekst">
+            Dit project is mijn eerste grote programmeerproject voor mijn
+            studie. De opdracht bestond uit het bouwen van een website voor
+            een fictief restaurant. De website bevat onder andere een
+            homepage, een gerecht van de dag, een productmenu en een
+            winkelmand.
+        </p>
+
+        <div class="technieken">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive design</span>
+        </div>
+
+    </section>
+
+    <div class="horizontale-balk"></div>
+
+
+    <section class="project-sectie">
+
+        <div class="sectie-tekst">
+
+            <p class="sectie-nummer">
+                01
+            </p>
+
+            <h2>Overzicht van de website</h2>
+
+            <p>
+                Hier zie je verschillende pagina’s van de website. De
+                afbeeldingen tonen het productmenu, de winkelmand, het
+                gerecht van de dag en de volledige menupagina.
+            </p>
+
+            <p>
+                De website werd opgebouwd met een duidelijke navigatie en
+                een overzichtelijke indeling. Klik op een afbeelding om deze
+                te vergroten.
+            </p>
+
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="fotos">
+
+                <figure class="gallery-item">
+
+                    <button
+                            class="image-button"
+                            type="button"
+                            aria-label="Menu-overzicht vergroten"
+                    >
+                        <img
+                                src="assets/Foto 11.png"
+                                alt="Menu-overzicht van de restaurantwebsite"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Menu-overzicht
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <button
+                            class="image-button"
+                            type="button"
+                            aria-label="Winkelmand vergroten"
+                    >
+                        <img
+                                src="assets/foto 12.png"
+                                alt="Winkelmand van de restaurantwebsite"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Winkelmand
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <button
+                            class="image-button"
+                            type="button"
+                            aria-label="Gerecht van de dag vergroten"
+                    >
+                        <img
+                                src="assets/foto 13.png"
+                                alt="Gerecht van de dag"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Gerecht van de dag
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <button
+                            class="image-button"
+                            type="button"
+                            aria-label="Menupagina vergroten"
+                    >
+                        <img
+                                src="assets/foto 14.png"
+                                alt="Menupagina met verschillende producten"
+                        >
+                    </button>
+
+                    <figcaption>
+                        Menupagina met producten
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="horizontale-balk"></div>
+
+
+    <section class="project-sectie video-sectie">
+
+        <div class="sectie-tekst">
+
+            <p class="sectie-nummer">
+                02
+            </p>
+
+            <h2>Demonstratievideo</h2>
+
+            <p>
+                In deze video laat ik zien hoe de website werkt. Ik
+                demonstreer onder andere hoe producten aan de winkelmand
+                worden toegevoegd en hoe een maximaal aantal per product
+                wordt toegepast.
+            </p>
+
+            <p>
+                Daarnaast laat ik zien hoe de verschillende pagina’s werken
+                en hoe de website tijdens het ontwikkelen werd getest.
+            </p>
+
+        </div>
+
+        <div class="video-container">
+
+            <video controls preload="metadata">
+
+                <source
+                        src="assets/2026-01-15 00-11-41.mp4"
+                        type="video/mp4"
+                >
+
+                Je browser ondersteunt geen video.
+
+            </video>
+
+        </div>
+
+    </section>
+
+    <div class="horizontale-balk"></div>
+
+
+    <section class="project-sectie bijdrage-sectie">
+
+        <div class="sectie-tekst">
+
+            <p class="sectie-nummer">
+                03
+            </p>
+
+            <h2>Mijn bijdrage</h2>
+
+            <p>
+                Ik heb de structuur van de website gemaakt, de pagina’s
+                vormgegeven en de interactieve onderdelen geprogrammeerd.
+            </p>
+
+        </div>
+
+        <div class="bijdrage-grid">
+
+            <article class="bijdrage-kaart">
+
+                <span class="kaart-nummer">
+                    01
+                </span>
+
+                <h3>HTML-structuur</h3>
+
+                <p>
+                    Ik heb de pagina’s opgebouwd met duidelijke en
+                    semantische HTML-elementen.
+                </p>
+
+            </article>
+
+            <article class="bijdrage-kaart">
+
+                <span class="kaart-nummer">
+                    02
+                </span>
+
+                <h3>Vormgeving</h3>
+
+                <p>
+                    Met CSS heb ik de layout, kleuren, afstanden en
+                    responsive weergave uitgewerkt.
+                </p>
+
+            </article>
+
+            <article class="bijdrage-kaart">
+
+                <span class="kaart-nummer">
+                    03
+                </span>
+
+                <h3>Interactie</h3>
+
+                <p>
+                    Met JavaScript heb ik interactieve onderdelen toegevoegd,
+                    zoals de winkelmand en het vergroten van afbeeldingen.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<div
+        id="lightbox"
+        class="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-hidden="true"
+        aria-label="Vergrote afbeelding"
+>
+
+    <button
+            id="lightbox-close"
+            class="lightbox-close"
+            type="button"
+            aria-label="Afbeelding sluiten"
+    >
+        &times;
+    </button>
+
+    <img
+            id="lightbox-img"
+            src=""
+            alt=""
+    >
+
 </div>
 
-<section class="persoonlijk">
-    <div class="teksteninfo">
-        <h1>Project: scripting</h1>
-        <p>Je kan op de afbeeldingen klikken om deze te vergroten. Dit project is mijn eerste grote project dat ik heb gemaakt
-            voor mijn studie. In dit project is het de bedoeling om een website op te bouwen voor een fictie bedrijf. Op deze
-            site moet er een homepage voorzien zijn met een gerecht van de dag aangetoond aan het begin van de pagina.
-            Hiernaast moesten we ook een pagina hebben met de volledige menu van mijn bedrijf, je moet in dit menu de optie
-            hebben om jou producten te verschuiven volgens prijs en je moet voorzien dat je producten kan toevoegen aan je
-            winkelmand. Hier staat ook een maximum op per product. De website werd opgebouwd met gebruik van HTML, CSS en javascript.
-        </p>
-    </div>
-</section>
-
-<div class="horizontale-balk-2"></div>
-
-
-<video controls>
-    <source src="assets/2026-01-15 00-11-41.mp4" type="video/mp4">
-    Je browser ondersteunt geen video.
-</video>
-
 <footer class="footer">
-    <a href="privacy.txt">Privacy-richtlijnen</a>
+
+    <div class="footer-inhoud">
+
+        <p>
+            Portfolio van Jesse Bergmans
+        </p>
+
+        <a href="privacy.txt">
+            Privacy-richtlijnen
+        </a>
+
+    </div>
+
 </footer>
 
 </body>
