@@ -60,6 +60,10 @@ body {
     font-weight: 400;
     white-space: nowrap;
 }
+.teksteninfo {
+    flex: 1;
+    max-width: 750px;
+}
 .teksteninfo h1 {
     font-size: clamp(34px, 6vw, 80px);
     margin-top: clamp(40px, 8vw, 140px);
@@ -71,6 +75,7 @@ body {
     font-size: clamp(28px, 5vw, 80px);
     margin-top: clamp(-12px, -2vw, -30px);
     margin-left: clamp(-20px, -4vw, -80px);
+    white-space: nowrap;
 }
 .teksteninfo p {
     color: white;
@@ -79,19 +84,20 @@ body {
     line-height: 1.6;
     max-width: 70ch;
 }
-.persoonlijk{
+.persoonlijk {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: clamp(30px, 6vw, 80px) 10%;
-    gap: clamp(16px, 4vw, 60px);
+    gap: clamp(30px, 5vw, 80px);
 }
-.persoonlijk img{
-    width: clamp(220px, 28vw, 650px);
-    height: auto;
-    aspect-ratio: 1 / 1;
+.persoonlijk img {
+    width: clamp(400px, 36vw, 550px);
+    height: clamp(400px, 36vw, 550px);
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
-    margin-right: clamp(-20px, -4vw, -80px);
-    max-width: 100%;
+    flex-shrink: 0;
 }
 .gallery-grid{
     padding: clamp(30px, 6vw, 80px) 10%;
