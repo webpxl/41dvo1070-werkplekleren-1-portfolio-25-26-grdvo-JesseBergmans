@@ -97,53 +97,238 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.project-kaart{
-    background-color: black;
+.projecten-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(24px, 3vw, 48px);
+
+    width: min(1500px, 94%);
+    margin: 0 auto;
+
+    padding: clamp(60px, 7vw, 100px) 0;
+}
+
+.project-kaart {
+    --accent: #ffffff;
+
+    min-width: 0;
+
+    padding: clamp(28px, 3vw, 42px);
+
+    background:
+            radial-gradient(
+                    circle at 50% 10%,
+                    rgba(255, 255, 255, 0.04),
+                    transparent 35%
+            ),
+            linear-gradient(
+                    145deg,
+                    #111923,
+                    #091019
+            );
+
     color: white;
     text-align: center;
-    font-size: clamp(14px, 2vw, 20px);
-    min-height: clamp(48px, 6vw, 72px);
-    margin-bottom: clamp(12px, 2vw, 20px);
+
+    border: 1px solid var(--accent);
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 700px;
+
+    box-shadow:
+            0 20px 50px rgba(0, 0, 0, 0.35);
+
+    transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
 }
-.project-kaart h2{
-    margin-bottom: 20px;
-    font-size: 20px;
-    min-height: 72px;
+
+
+.project-kaart:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+            0 25px 60px rgba(0, 0, 0, 0.5),
+            0 0 25px color-mix(in srgb, var(--accent) 18%, transparent);
 }
-.project-kaart img{
+
+
+.project-kaart.marketing {
+    --accent: #914cff;
+}
+
+
+.project-kaart.development {
+    --accent: #4fe39a;
+}
+
+
+.project-kaart.illustratie {
+    --accent: #ff7900;
+}
+
+.project-icon {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 50%;
+
+    background: var(--accent);
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow:
+            0 0 25px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.project-categorie {
+    margin: 0 0 10px;
+
+    color: var(--accent);
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 0.4px;
+}
+
+.project-kaart h2 {
+    margin: 0 0 20px;
+
+    color: white;
+
+    font-size: clamp(24px, 2vw, 32px);
+    line-height: 1.15;
+}
+
+.project-beschrijving {
+    max-width: 420px;
+
+    margin: 0 auto 30px;
+
+    color: #d4d6da;
+
+    font-family: Arial, sans-serif;
+
+    font-size: clamp(14px, 1.2vw, 17px);
+    line-height: 1.7;
+}
+
+.project-kaart img {
     width: 100%;
+    height: 270px;
+
+    margin-top: auto;
+
     object-fit: cover;
-    height: clamp(180px, 25vw, 300px);
-    margin-top: clamp(16px, 4vw, 40px);
-    border-radius: clamp(10px, 2vw, 16px);
+
+    border-radius: 18px;
+
+    display: block;
 }
-.projecten-grid a {
+
+.project-button {
+    width: min(250px, 80%);
+
+    margin-top: 28px;
+
+    padding: 15px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
     text-decoration: none;
-    color: inherit;
+
+    background: rgba(255, 255, 255, 0.015);
+
+    transition:
+            background-color 0.25s ease,
+            transform 0.25s ease;
 }
-.projecten-grid a:nth-of-type(3) {
-    grid-column: 1 / span 2;
-    grid-row: 2;
+
+
+.project-button span {
+    font-size: 24px;
+    font-weight: 400;
+
+    transition: transform 0.25s ease;
 }
-.projecten-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2px 1fr;
-    column-gap: clamp(24px, 6vw, 80px);
-    row-gap: clamp(24px, 6vw, 80px);
-    padding: clamp(30px, 6vw, 80px) 10%;
-    align-items: start;
+
+
+.project-button:hover {
+    background:
+            color-mix(in srgb, var(--accent) 12%, transparent);
+
+    transform: translateY(-2px);
 }
-.projecten-grid a:nth-of-type(1){ grid-column: 1; grid-row: 1; }
-.projecten-grid a:nth-of-type(2){ grid-column: 2; grid-row: 1; }
-.projecten-grid a:nth-of-type(3){ grid-column: 4; grid-row: 1; }
-.scheidingslijn{
-    grid-column: 3;
-    grid-row: 1;
-    width: 2px;
-    height: 100%;
-    background: white;
-    justify-self: center;
-    align-self: stretch;
+
+
+.project-button:hover span {
+    transform: translateX(5px);
+}
+
+@media (max-width: 1050px) {
+
+    .projecten-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-kaart.illustratie {
+        grid-column: 1 / -1;
+
+        width: min(600px, 100%);
+        justify-self: center;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .projecten-grid {
+        grid-template-columns: 1fr;
+
+        width: min(92%, 500px);
+
+        padding-top: 45px;
+    }
+
+    .project-kaart.illustratie {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+    .project-kaart {
+        min-height: auto;
+    }
+
+    .project-kaart img {
+        height: 230px;
+    }
 }
 .footer {
     text-align: center;

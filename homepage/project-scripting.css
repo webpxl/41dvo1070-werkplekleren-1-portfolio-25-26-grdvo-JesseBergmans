@@ -121,6 +121,49 @@ a {
     background-color: #fff;
 }
 
+.terug-knop {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-left: 10%;
+    margin-top: 35px;
+
+    padding: 11px 18px;
+
+    color: white;
+    background: transparent;
+
+    border: 1px solid #4fe39a;
+    border-radius: 999px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+            background-color 0.25s ease,
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+}
+
+.terug-knop span {
+    font-size: 20px;
+    transition: transform 0.25s ease;
+}
+
+.terug-knop:hover {
+    background-color: rgba(79, 227, 154, 0.12);
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(79, 227, 154, 0.15);
+}
+
+.terug-knop:hover span {
+    transform: translateX(-4px);
+}
+
 .project-pagina {
     width: min(94%, 1500px);
     margin: 0 auto;
